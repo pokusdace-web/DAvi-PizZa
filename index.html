@@ -96,7 +96,7 @@
               <option value="cheese">Quattro formaggi</option>
             </select>
             <textarea placeholder="Delivery Address" rows="5" required></textarea>
-            <button type="submit" class="btn">Send order</button>
+            <button id="order-btn" type="submit" class="btn">Send order</button>
         </form>
     </section>
 
@@ -113,6 +113,11 @@
             <a href="#" aria-label="Instagram"><img src="instagram.webp" alt="Instagram"></a>
         </div>
     </footer>
-
+<script>
+    const orderButton = document.getElementById('order-btn');
+    orderButton.addEventListener('click', function(){
+        alert('Order placed successfully! David Jr is already firing up the oven for you. Thank you for choosing DAvi PiZzA!');
+    });
+</script>
 </body>
 </html>
